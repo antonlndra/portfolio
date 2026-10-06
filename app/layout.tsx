@@ -18,23 +18,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(DATA.url),
+  metadataBase: new URL("https://antoo.es"),
   title: {
-    default: DATA.name,
-    template: `%s | ${DATA.name}`,
+    default: "anto",
+    template: "%s | anto",
   },
   description: DATA.description,
   openGraph: {
-    title: DATA.name,
+    title: "anto",
     description: DATA.description,
-    url: DATA.url,
-    siteName: DATA.name,
+    url: "https://antoo.es",
+    siteName: "anto",
     locale: "es_ES",
     type: "website",
   },
   twitter: {
-    title: DATA.name,
+    title: "anto",
     card: "summary_large_image",
+  },
+  icons: {
+    icon: [{ url: "/icon.svg" }, { url: "/icon.png", sizes: "32x32" }],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180" }],
   },
 };
 
